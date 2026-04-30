@@ -1,0 +1,52 @@
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--color-bg-white);
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.header.scrolled {
+    border-bottom-color: var(--color-border);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 72px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    text-decoration: none;
+}
+
+.logoText {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--color-text-primary);
+    line-height: 1.2;
+}
+
+.logoSub {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--color-text-light);
+    letter-spacing: 0.01em;
+}
+
+.cta {
+    font-size: 14px;
+    padding: 10px 22px;
+}
+
+@media (max-width: 480px) {
+    .logoSub {
+        display: none;
+    }
+}
