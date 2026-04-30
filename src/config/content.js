@@ -118,7 +118,7 @@ export const content = {
       { value: "$50M", label: "Spent on ads" },
     ],
     partnerImage: {
-      src: "/img/partner-1.webp",
+      src: "https://nonprofit.dgtl-house.com/img/partner-1.webp",
       alt: "Our nonprofit partner organizations",
     },
   },
